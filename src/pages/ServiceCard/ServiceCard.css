@@ -1,0 +1,86 @@
+/* App Container */
+.app-container {
+  height: auto;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px 20px;
+  background-color: #000;
+}
+
+/* Card Grid */
+.card-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: wheat;
+}
+
+/* Single Card */
+.service-card {
+  background-color: #111;
+  padding: 30px 20px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 10px 6px 16px rgba(44, 210, 222);
+}
+
+/* Icon in Card */
+.service-card .icon {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+/* Title */
+.service-card h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Description */
+.service-card p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* ✅ Responsive Styling for Both Card Layouts */
+@media (max-width: 720px) {
+  .app-container {
+    padding: 40px 10px;
+  }
+
+  .card-wrapper {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 90%;
+    padding: 25px 15px;
+  }
+
+  .service-card h3 {
+    font-size: 16px;
+  }
+
+  .service-card p {
+    font-size: 13px;
+  }
+
+  .service-card .icon {
+    font-size: 26px;
+  }
+}

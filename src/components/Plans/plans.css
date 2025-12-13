@@ -1,0 +1,441 @@
+/* ============================================= */
+/* FINAL – NETFLIX EXACT ALIGNMENT + BLACK TEXT */
+/* ============================================= */
+
+/* .plan-container {
+  min-height: 100vh;
+  background: #0f0f0f;
+  padding: 80px 20px 120px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.plan-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top center, rgba(20, 100, 255, 0.1), transparent 60%);
+  pointer-events: none;
+}
+
+.plan-container::after {
+  content: "Step 3 of 4";
+  display: block;
+  font-size: 15px;
+  color: #888;
+  text-align: center;
+  margin-bottom: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.heading {
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+  margin: 0 auto 60px;
+  max-width: 1000px;
+  background: linear-gradient(135deg, #ffffff, #a0e7ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.5px;
+}
+
+/* Perfect Centered Grid – No left:170px nonsense */
+/* .plan-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .plan-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+} */
+
+/* Card */
+/* .plan-card {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border: 2px solid transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.plan-card:hover {
+  transform: translateY(-16px) scale(1.03);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+}
+
+.plan-card.selected {
+  border: 3px solid #00e6e6;
+  box-shadow: 0 0 40px rgba(0, 230, 230, 0.4), 0 20px 50px rgba(0, 0, 0, 0.6);
+  transform: scale(1.05);
+} */
+
+/* Title Gradient */
+/* .plan-card h2 {
+  margin: 0;
+  padding: 32px 20px 12px;
+  font-size: 26px;
+  font-weight: 800;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg, #06b6d4, #0891b2);
+}
+
+.plan-card:nth-child(1) h2 { background: linear-gradient(135deg, #06b6d4, #0891b2); }
+.plan-card:nth-child(2) h2 { background: linear-gradient(135deg, #8b5cf6, #a78bfa); }
+.plan-card:nth-child(3) h2 { background: linear-gradient(135deg, #ec4899, #f43f5e); } */
+
+/* Price */
+/* .price {
+  font-size: 42px;
+  font-weight: 900;
+  color: #000000;
+  text-align: center;
+  margin: 20px 0 24px;
+} */
+
+/* Divider */
+/* .line {
+  height: 1px;
+  background: #e0e0e0;
+  margin: 0 30px 20px;
+} */
+
+/* Features – Black Text + Clean Alignment */
+/* .features {
+  list-style: none;
+  padding: 0 30px 30px;
+  margin: 0;
+}
+
+.features li {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  font-size: 16px;
+  color: #000000;
+  border-bottom: 1px solid #eee;
+}
+
+.features li:last-child { border-bottom: none; }
+
+.features li strong {
+  font-weight: 700;
+  min-width: 130px;
+  color: #000000;
+} */
+
+/* Checkmark */
+/* .features li::before {
+  content: "✓";
+  color: #00e6e6;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 12px;
+} */
+
+/* Most Popular – Standard Plan (2nd card) */
+/* .plan-card:nth-child(2)::after {
+  content: "MOST POPULAR";
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, #f59e0b, #f97316);
+  color: white;
+  font-size: 13px;
+  font-weight: 900;
+  padding: 10px 28px;
+  border-radius: 50px;
+  box-shadow: 0 8px 20px rgba(249, 115, 22, 0.4);
+  letter-spacing: 1px;
+  z-index: 10;
+} */
+
+/* Selected Tick */
+/* .plan-card.selected::before {
+  content: "✓";
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #00e6e6;
+  color: #000;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: bold;
+  box-shadow: 0 0 30px rgba(0, 230, 230, 0.7);
+  z-index: 10;
+} */
+
+/* Next Button – Perfectly Centered */
+/* .next-btn {
+  display: block;
+  margin: 90px auto 40px;
+  max-width: 700px;
+  width: 100%;
+  background: linear-gradient(90deg, #00e6e6, #00a3a3);
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 10px 40px rgba(0, 230, 230, 0.4);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.next-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 50px rgba(0, 230, 230, 0.6);
+  background: linear-gradient(90deg, #00f5f5, #00c4c4);
+}
+
+.next-btn::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transition: left 0.7s;
+}
+
+.next-btn:hover::before { left: 100%; } */
+
+/* Mobile Fix */
+/* @media (max-width: 768px) {
+  .heading { font-size: 36px; }
+  .plan-grid { gap: 24px; padding: 0 10px; }
+  .next-btn { padding: 18px 40px; font-size: 18px; }
+} */
+
+
+
+
+/* ============================================= */
+/* PREMIUM – CLEAN, PROFESSIONAL, WELL-ALIGNED */
+/* ============================================= */
+
+.plan-container {
+  min-height: 100vh;
+  background: #0f0f0f;
+  padding: 90px 20px 140px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.plan-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top center, rgba(35, 132, 255, 0.12), transparent 70%);
+  pointer-events: none;
+}
+
+/* Heading */
+.heading {
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+  margin: 0 auto 70px;
+  max-width: 1000px;
+  background: linear-gradient(135deg, #ffffff, #8bd8ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.4px;
+}
+
+/* Grid */
+.plan-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 35px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .plan-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Card */
+.plan-card {
+  background: #ffffff;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+  transition: all 0.35s ease;
+  border: 2px solid transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.plan-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.6);
+}
+
+.plan-card.selected {
+  border: 3px solid #00f0f0;
+  box-shadow: 0 0 40px rgba(0, 240, 240, 0.45),
+              0 20px 50px rgba(0, 0, 0, 0.6);
+  transform: scale(1.04);
+}
+
+/* Card Header */
+.plan-card h2 {
+  margin: 0;
+  padding: 32px 20px 14px;
+  font-size: 26px;
+  font-weight: 800;
+  text-align: center;
+  color: white;
+}
+
+.plan-card:nth-child(1) h2 {
+  background: linear-gradient(135deg, #06b6d4, #0ea5e9);
+}
+.plan-card:nth-child(2) h2 {
+  background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+}
+.plan-card:nth-child(3) h2 {
+  background: linear-gradient(135deg, #f43f5e, #fb7185);
+}
+
+/* Price */
+.price {
+  font-size: 40px;
+  font-weight: 900;
+  color: #000;
+  text-align: center;
+  margin: 22px 0 26px;
+}
+
+/* Divider */
+.line {
+  height: 1px;
+  background: #e2e2e2;
+  margin: 0 30px 20px;
+}
+
+/* Features */
+.features {
+  padding: 0 30px 28px;
+  margin: 0;
+  list-style: none;
+}
+
+.features li {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  font-size: 16px;
+  color: black;
+  border-bottom: 1px solid #eee;
+}
+
+.features li:last-child {
+  border-bottom: none;
+}
+
+.features li strong {
+  font-weight: 700;
+  min-width: 130px;
+}
+
+.features li::before {
+  content: "✓";
+  color: #00e6e6;
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 12px;
+}
+
+/* Most Popular Tag (Card 2) */
+.plan-card:nth-child(2)::after {
+  content: "MOST POPULAR";
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, #f59e0b, #f97316);
+  color: white;
+  font-size: 13px;
+  font-weight: 900;
+  padding: 10px 26px;
+  border-radius: 40px;
+  box-shadow: 0 8px 22px rgba(249, 115, 22, 0.35);
+  letter-spacing: 1px;
+  z-index: 10;
+}
+
+/* Selected Tick */
+.plan-card.selected::before {
+  content: "✓";
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #00e6e6;
+  color: black;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0 0 30px rgba(0, 230, 230, 0.7);
+}
+
+/* RAZOR BUTTON WRAPPERS */
+.razor1-wrapper,
+.razor2-wrapper,
+.razor3-wrapper {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 36px;
+  }
+  .plan-grid {
+    gap: 24px;
+    padding: 0 10px;
+  }
+  .price {
+    font-size: 34px;
+  }
+}

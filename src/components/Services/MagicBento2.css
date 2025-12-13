@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+  
+  font-family: sans-serif;
+}
+
+/* .card11-container11 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  min-height: 100vh;
+  
+ 
+} */
+ .card11-container11 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* always 3 columns */
+  gap: 20px;
+  padding: 40px;
+  min-height: 80vh;
+}
+
+.card11 {
+  position: relative;
+  background-color: #0e0e15;
+  border: 1px solid #2a2a2a;
+  border-radius: 15px;
+  padding: 20px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  cursor: pointer;
+  color: white;
+  height: 300px;
+  
+}
+.content11 h1{
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.card11:hover {
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 20px rgba(121, 69, 180, 0.861);
+}
+#peraaa{
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+
+
+
+.card11 .content11 p {
+  font-size: 20px;
+  color: #999;
+  top: 50px;
+  position: relative;
+
+  
+}
+
+.card11 .spotlight {
+  position: absolute;
+  top: var(--y, 50%);
+  left: var(--x, 50%);
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent 60%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width 0.3s ease, height 0.3s ease;
+  z-index: 0;
+}
+
+.card11:hover .spotlight {
+  width: 300px;
+  height: 300px;
+}
+
+
+
+
+
+
+
+
+/* Media Queries for additional responsiveness */
+@media screen and (max-width: 900px) {
+  .card11-container11 {
+    grid-template-columns: repeat(2, 1fr); /* tablet view: 2 cards */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card11-container11 {
+    grid-template-columns: 1fr; /* mobile view: 1 card */
+  }
+  .card11 .content11 p {
+    font-size: 14px;
+    top: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card11-container11 {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .card11 {
+    height: 250px;
+  }
+
+  .card11 .content11 p {
+    font-size: 14px;
+    top: 20px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .card11-container11 {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .card11 {
+    height: 280px;
+  }
+
+}

@@ -1,0 +1,31 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+#dark {
+  position: absolute;
+  top: 80px;
+
+}
+
+.ha {
+  position: relative;
+  top: 100px;
+  height: auto;
+}
+.pri{
+  position: relative;
+  bottom: 70px;
+}
+@media (min-width: 300px) {
+  #gem1 {
+    position: relative;
+    top: 100px;
+  }
+  .pri{
+    position: relative;
+    top: 100px;
+  }
+}

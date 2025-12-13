@@ -1,0 +1,346 @@
+/* BASE RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.haha {
+    position: relative;
+    left: 5px;
+}
+
+.vision{
+    text-align: center;
+    /* border: 2px solid white; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: auto;
+}
+
+/* HOME SECTION */
+#home {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    margin-top: 100px;
+    overflow: hidden;
+    flex-direction: row;
+}
+.jojo{
+    position: relative;
+    top: 500px;
+
+}
+.lefthome,
+.righthome {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lefthome {
+    color: white;
+}
+
+.righthome img {
+    width: 70%;
+    max-height: 600px;
+    object-fit: contain;
+    filter: drop-shadow(2px 2px 20px rgb(116, 201, 225));
+}
+
+.homedetails {
+    font-size: 2vmax;
+}
+
+.line1 {
+    font-size: 0.8em;
+    position: relative;
+}
+
+.line2 {
+    font-size: 2.5em;
+    background: linear-gradient(to right, rgb(57, 177, 204), white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.line3 {
+    font-size: 1em;
+}
+
+.homedetails button {
+    padding: 10px 30px;
+    background-color: rgb(66, 180, 205);
+    color: black;
+    margin-top: 30px;
+    border-radius: 1.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.homedetails button:hover {
+    background-color: transparent;
+    color: rgb(66, 180, 205);
+}
+
+/* SLIDER SECTION */
+.slider2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 30px;
+    cursor: pointer;
+}
+
+/* ABOUT SECTION */
+#aboutghvgv {
+    width: 100%;
+    height: 100vh;
+    border: 2px solid rgb(116, 201, 225);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#about {
+    margin-top: 50px;
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+}
+
+.left {
+    width: 48%;
+    height: 125vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+    flex-direction: column;
+    position: relative;
+    top: 90px;
+}
+
+.leftabout {
+    width: 4%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 0px;
+}
+
+.rightabout {
+    width: 48%;
+    height: 122vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+
+}
+
+.circle-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.clients{
+    margin-bottom: 40px;
+}
+
+.circle {
+    width: 62px;
+    height: 62px;
+    border-radius: 50px;
+    background-color: #7ad7ea;
+    box-shadow: 2px 2px 20px #7ad7ea;
+    position: relative;
+    top: 35px;
+}
+
+.line {
+    bottom: 50px;
+    top: 35px;
+    width: 5px;
+    height: 230px;
+    background-color: aliceblue;
+    position: relative;
+}
+
+.gov {
+    font-size: 4vmax;
+    background: linear-gradient(to right, rgb(53, 203, 183), white);
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    font-weight: bold;
+}
+
+.c2 {
+    width: 90%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    padding: 20px;
+    margin-left: 30px;
+}
+
+/* RESPONSIVE QUERIES */
+
+/* ABOUT section on smaller screens */
+@media screen and (max-width: 768px) {
+    #about {
+        flex-direction: column;
+        height: 750px;
+        white-space: normal;
+       
+        
+    }
+
+    .left,
+    .rightabout {
+        width: 100%;
+        height: auto;
+        gap: 40px;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .leftabout {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        top: 0;
+    }
+
+    .circle-line {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .circle {
+        width: 50px;
+        height: 50px;
+        top: 0;
+        margin-bottom: 10px;
+        box-shadow: 1px 1px 10px #7ad7ea;
+    }
+
+    .line {
+        width: 60px;
+        height: 2px;
+        background-color: #7ad7ea;
+        top: 0;
+    }
+
+    #aboutghvgv {
+        height: auto;
+        padding: 20px 10px;
+    }
+}
+
+/* HOME section on smaller screens */
+@media (max-width: 750px) {
+    #home {
+        flex-direction: column-reverse;
+        margin-top: 30px;
+    }
+
+    .homedetails {
+        position: relative;
+        top: 10px;
+        text-align: center;
+    }
+
+    .lefthome,
+    .righthome {
+        width: 100%;
+        height: auto;
+    }
+
+    .lefthome {
+        padding: 20px;
+        font-size: 16px;
+    }
+    .leftabout{
+        position: relative;
+        top: 78px;
+    }
+    .rightabout{
+        position: relative;
+        top: 60px;
+    }
+
+    .righthome {
+        align-items: flex-end;
+    }
+
+    .righthome img {
+        width: 85%;
+        max-height: 300px;
+        margin-bottom: 20px;
+    }
+
+    .line2 {
+        font-size: 1.5em;
+    }
+}
+
+/* SLIDER2 section responsive */
+@media (max-width: 720px) {
+    .slider2 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        bottom: 0;
+    }
+
+    .slider2 .swiper {
+        width: 90% !important;
+        height: auto !important;
+    }
+
+    .slider2 img {
+        width: 100% !important;
+        height: auto !important;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 25px;
+        height: 25px;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 50%;
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        font-size: 14px;
+        color: white;
+    }
+}

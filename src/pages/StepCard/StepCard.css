@@ -1,0 +1,91 @@
+/* body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000;
+  color: #fff;
+} */
+
+.app2-container2 {
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-subtitle {
+  color: orange;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.section-desc {
+  color: #aaa;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.step-card {
+  background-color: #111;
+  padding: 25px 20px;
+  border-radius: 12px;
+  text-align: left;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+  position: relative;
+  cursor: pointer;
+}
+
+.step-card:hover {
+   box-shadow: 10px 6px 16px rgb(204, 145, 7);
+}
+
+.step-icon {
+  font-size: 28px;
+  background-color: orange;
+  color: #000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.step-number {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ccc;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.step-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: white
+}
+.step-title:hover {
+  background-color: transparent;
+    color: rgb(66, 180, 205);
+}
+.step-desc {
+  font-size: 14px;
+  color: #aaa;
+  line-height: 1.5;
+}

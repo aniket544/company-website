@@ -1,0 +1,137 @@
+.gem-container {
+    position: relative;
+    max-width: 1060px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #ffffff;
+    line-height: 1.6;
+    top: 120px;
+    cursor: pointer;
+}
+
+.gem-container h1,
+.gem-container h2,
+.gem-container h3 {
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.gem-container a {
+    color: #f6f6f6;
+    text-decoration: none;
+}
+
+.gem-container a:hover {
+    text-decoration: underline;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    margin-top: 24px;
+}
+
+table {
+    width: 100%;
+    
+}
+
+thead th {
+    background-color: #0a0a0a;
+    text-align: left;
+    padding: 12px;
+    font-weight: bold;
+}
+
+tbody td {
+    padding: 12px;
+   
+    vertical-align: top;
+}
+
+strong {
+    color: #ffffff;
+}
+/* Bullet List Section - "Who Should Register" */
+.bullet-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.bullet-list li {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+/* Nested list for document section */
+.document-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.document-list li {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.document-list li ul {
+  list-style-type: circle;
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+.document-list li ul li {
+  margin-bottom: 8px;
+}
+.gem-container {
+  padding: 40px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  line-height: 1.6;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.gem-section {
+  margin-bottom: 50px;
+}
+
+.gem-section h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-weight: 700;
+  border-left: 4px solid #005a9c;
+  padding-left: 12px;
+}
+
+.gem-section h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 8px;
+}
+
+.gem-section p {
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.gem-section ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.gem-section ul li {
+  margin-bottom: 6px;
+}
+
+.gem-section a {
+  color: #005a9c;
+  text-decoration: underline;
+  font-weight: 500;
+}

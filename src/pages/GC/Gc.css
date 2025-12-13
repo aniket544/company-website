@@ -1,0 +1,199 @@
+
+.hehe{
+    width: 100%;
+    height: auto;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#gc2{
+    overflow-x: hidden;
+}
+
+#gc {
+    position: relative;
+    top: 80px;
+    height:120vh ;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    
+
+
+}
+
+.igh {
+    height: 90%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+
+    background-size: cover;
+    /* Better for responsiveness */
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.aa{
+   
+    position: relative;
+    top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    box-shadow: 0px 20px 20px rgba(95, 107, 109, 0.591);
+
+    color: #fff;
+    font-size: 10px;
+}
+.why-container {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 20px;
+  text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.why-container h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.sub-heading {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.service-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 25px;
+}
+
+.service-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.check-icon {
+  color: #00b853;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.bottom-note {
+  font-size: 15px;
+  color: #ffffff;
+}
+.gem1-container1 {
+  position: relative;
+  top: 0;
+  background-color: #000;
+  color: white;
+  padding: 20px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+#sdd{
+  /* position: relative;
+  left: 180px; */
+  margin-left: 180px;
+}
+.gem1-container1 h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.gem1-container1 ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+.gem1-container1 ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.benefits li {
+  display: flex;
+  align-items: center;
+}
+
+.note {
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 20px;
+  position: relative;
+  /* left: 180px; */
+  margin-left: 180px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  #gc {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+
+  .igh {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 480px) {
+  #gc {
+    padding: 0.5rem;
+  }
+
+  .igh {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 320px) {
+  #gc {
+    padding: 0.5rem;
+  }
+
+  .igh {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 240px) {
+  #gc {
+    padding: 0.5rem;
+  }
+
+  .igh {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,78 @@
+.c2 {
+    height: 300px;
+    margin-top: 20px;
+    display: flex;
+    width: 90%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 10px;
+    gap: 20px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    
+}
+
+.haha {
+    width: 33rem;
+    height: 230px;
+    align-items: center;
+}
+
+.c2::-webkit-scrollbar {
+    display: none;
+   
+}
+
+.service-card2 {
+    width: 550px;
+    
+}
+
+.S2 {
+    display: flex;
+    margin: 30px;
+   
+    padding: 30px 20px;
+    border-radius: 12px;
+    width: 36rem;
+    height: 250px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+    align-items: center;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+   
+}
+
+.S2:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 6px 16px rgba(44, 210, 222);
+}
+
+ 
+@media (max-width: 720px) {
+    .c2 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        overflow-x: hidden;
+    }
+
+    .S2 {
+        width: 300px;
+        margin: 15px;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .service-card2 {
+        width: 100%;
+    }
+
+    .haha {
+        width: 16rem;
+        height: 95px;
+        align-items: center;
+    }
+}

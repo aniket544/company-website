@@ -1,0 +1,368 @@
+/* Base reset */
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+
+/* Container: full page vs popup */
+/* .login-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  background: radial-gradient(circle at top, #020617 0%, #020617 40%, #000000 100%);
+} */
+
+/* Full-page variant */
+/* .login-container.full-page {
+  position: relative;
+} */
+
+/* Popup variant */
+/* .login-container.popup {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+} */
+
+/* Dimmed overlay for popup */
+/* .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+} */
+
+/* Card / form box */
+/* .login-form {
+  z-index: 1;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  padding: 2.25rem 2.5rem 2.1rem;
+  border: 2px solid white;
+  border-radius: 16px;
+  background: linear-gradient(145deg, #020617, #020816);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: left;
+  color: #e5e7eb;
+} */
+
+/* Close button for popup */
+/* .close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: #9ca3af;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #e5e7eb;
+} */
+
+/* Heading */
+/* .login-form h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #e5e7eb;
+  text-align: center;
+} */
+
+/* Form layout */
+/* .login-form form {
+  display: flex;
+  flex-direction: column;
+} */
+
+/* Form group */
+/* .form-group {
+  margin-bottom: 1rem;
+  border: 2px solid white;
+} */
+
+/* Label */
+/* .form-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.88rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #e5e7eb;
+} */
+
+/* Inputs */
+/* .form-group input {
+  width: 100%;
+  padding: 0.65rem 0.8rem;
+  border-radius: 10px;
+  border: 1px solid #4b5563;
+  background-color: #020617;
+  color: #f9fafb;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.form-group input::placeholder {
+  color: #6b7280;
+}
+
+.form-group input:focus {
+  border-color: #22c1c3;
+  background-color: #020617;
+} */
+
+/* Error message */
+/* .error {
+  margin-top: 0.3rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.85rem;
+  color: #fca5a5;
+} */
+
+/* Button */
+/* .login-form button[type="submit"] {
+  width: auto;
+  margin: 1.5rem auto 1rem;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #22c1c3, #3b82f6);
+  color: #f9fafb;
+  font-size: 0.98rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.login-form button[type="submit"]:hover:not(:disabled) {
+  background: linear-gradient(135deg, #3b82f6, #22c1c3);
+}
+
+.login-form button[type="submit"]:active:not(:disabled) {
+  background: linear-gradient(135deg, #1e9b9d, #2563eb);
+}
+
+.login-form button[type="submit"]:disabled {
+  background: #4b5563;
+  cursor: not-allowed;
+  opacity: 0.7;
+} */
+
+/* Register text */
+/* .login-form p {
+  margin-top: 1.3rem;
+  font-size: 0.85rem;
+  text-align: center;
+  color: #9ca3af;
+} */
+
+/* Register link span */
+/* .register-link {
+  color: #38bdf8;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.register-link:hover {
+  color: #7dd3fc;
+  text-decoration: underline;
+} */
+
+/* Responsive tweaks */
+/* @media (max-width: 480px) {
+  .login-form {
+    padding: 1.9rem 1.5rem 1.85rem;
+  }
+
+  .login-form h2 {
+    font-size: 1.4rem;
+  }
+} */
+
+
+
+
+/* login.css */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-container.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.login-card {
+  position: relative;
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-5px);
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #aaa;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+.login-card h2 {
+  margin: 0 0 10px;
+  font-size: 28px;
+  color: #333;
+  font-weight: 600;
+}
+
+.subtitle {
+  margin-bottom: 30px;
+  color: #666;
+  font-size: 16px;
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.social-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.google-btn {
+  background: #ffffff;
+  border: 1px solid #dadce0;
+  color: #3c4043;
+}
+
+.google-btn:hover:not(:disabled) {
+  background: #f8f9fa;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.facebook-btn {
+  background: #1877F2;
+  color: white;
+}
+
+.facebook-btn:hover:not(:disabled) {
+  background: #166fe5;
+}
+
+.divider {
+  position: relative;
+  margin: 20px 0;
+  color: #888;
+  font-size: 14px;
+}
+
+.divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #e0e0e0;
+}
+
+.divider span {
+  background: white;
+  padding: 0 20px;
+}
+
+.error {
+  background: #fee;
+  color: #c33;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.register-text {
+  color: #666;
+  font-size: 15px;
+}
+
+.register-link {
+  color: #4285F4;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}

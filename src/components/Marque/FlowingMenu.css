@@ -1,0 +1,159 @@
+.slideri-containeri {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+}
+
+.slideri {
+  display: flex;
+  width: calc(50% * 4);
+  /* Adjust based on number of images */
+  animation: slide 30s linear infinite;
+}
+
+.slidei {
+  flex: 0 0 15%;
+  /* Each image takes 25% of container width */
+  max-width: 20%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.slidei img {
+  width: 390px;
+  height: 190px;
+  object-fit:contain;
+  border-radius: 8px;
+
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+    /* Move half the total width for seamless loop */
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .slidei {
+    flex: 0 0 50%;
+    /* Show 2 images at a time on smaller screens */
+    max-width: 50%;
+  }
+
+  .slideri {
+    width: calc(400% * 2);
+    /* Adjust for responsive layout */
+  }
+
+  .slidei img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slidei {
+    flex: 0 0 80%;
+    /* One image per frame */
+    max-width: 90%;
+    object-fit: cover;
+  }
+
+  .slideri {
+    display: flex;
+    gap: 30px;
+    width: calc(100% * var(--total-slides));
+    /* total images count */
+    animation: slide-mobile 20s linear infinite;
+  }
+
+  .slidei img {
+    height: 150px;
+    width: 105%;
+    object-fit: contain;
+  }
+
+  @keyframes slide-mobile {
+    0% {
+      transform: translateX(0);
+    }
+
+    10% {
+      transform: translateX(-50%);
+    }
+
+    15% {
+      transform: translateX(-100%);
+    }
+
+    20% {
+      transform: translateX(-150%);
+    }
+
+    25% {
+      transform: translateX(-200%);
+    }
+
+    30% {
+      transform: translateX(-250%);
+    }
+
+    35% {
+      transform: translateX(-300%);
+    }
+
+    40% {
+      transform: translateX(-350%);
+    }
+
+    45% {
+      transform: translateX(-400%);
+    }
+
+    50% {
+      transform: translateX(-450%);
+    }
+
+    55% {
+      transform: translateX(-500%);
+    }
+
+    60% {
+      transform: translateX(-550%);
+    }
+
+    70% {
+      transform: translateX(-600%);
+    }
+
+    75% {
+      transform: translateX(-650%);
+    }
+
+    80% {
+      transform: translateX(-700%);
+    }
+
+    85% {
+      transform: translateX(-750%);
+    }
+
+    90% {
+      transform: translateX(-800%);
+    }
+
+    95% {
+      transform: translateX(-850%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+}

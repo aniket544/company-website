@@ -1,0 +1,231 @@
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    background-color: rgb(17, 23, 23);
+
+
+}
+
+#ddd1{
+    text-decoration: none;
+    background-color: rgb(107, 211, 211);
+    color: blanchedalmond;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#ddd1:hover{
+    background-color: rgb(16, 187, 173);
+    /* color: black; */
+    text-decoration: none;
+}
+
+.ov {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a#wwd {
+    text-decoration: none;
+    color: white
+}
+
+a#wwd:visited {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+nav ul a {
+    cursor: pointer;
+}
+
+nav ul a:hover {
+    color: rgb(107, 211, 211);
+    border-bottom: 2px solid white;
+}
+
+
+a.active {
+    color: rgb(107, 211, 211);
+    border-bottom: 2px solid white;
+}
+
+nav span {
+
+    font-size: 30px;
+    font-weight: 600;
+    background: linear-gradient(to right, rgb(57, 177, 204), white);
+    background-clip: text;
+    color: transparent;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    display: none;
+
+}
+
+.ham {
+    width: 40px;
+    height: 2px;
+    background-color: aliceblue;
+    transition: all 0.5s;
+}
+
+#ddd {
+    text-decoration: none;
+    color: rgb(107, 211, 211);
+    font-size: 20px;
+}
+
+#ddd:visited {
+    color: rgb(107, 211, 211);
+}
+
+
+.activeham .ham:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
+
+
+}
+
+.activeham .ham:nth-child(2) {
+    opacity: 0;
+
+
+}
+
+.activeham .ham:nth-child(3) {
+    transform: rotate(-45deg);
+
+    position: relative;
+    top: -12px;
+
+
+}
+
+.mobilemenu {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    height: 100vh;
+    right: 0;
+    transform: translateX(100%);
+    flex-direction: column;
+    transition: all o.5s;
+    background-color: rgba(17, 20, 23, 0.66);
+
+
+}
+
+.activemobile {
+    transform: translateX(0%);
+}
+
+.dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -20px;
+    background-color: black;
+    border: none;
+    border-radius: 20px;
+    padding: 0;
+    z-index: 10;
+    list-style: none;
+    min-width: 200px;
+
+}
+
+#ink {
+    text-decoration: none;
+    color: rgb(107, 211, 211);
+
+}
+
+.dropdown-menu li {
+    padding: 10px 10px;
+    white-space: nowrap;
+    margin: 10px;
+    position: relative;
+
+
+}
+
+.dropdown-menu li:hover {
+    background-color: gray;
+    border-radius: 15px;
+}
+
+/* Show dropdown on hover (desktop only) */
+.desktopmenu .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Show dropdown on click for mobile (optional improvement later) */
+
+
+
+
+
+@media(max-width:750px) {
+    .desktopmenu {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    #yoyo3 {
+        font-size: 25px;
+        text-decoration: none;
+        color: rgb(107, 211, 211);
+    }
+
+    .ov {
+        cursor: pointer;
+        text-decoration: none;
+        border: none;
+    }
+
+    nav {
+        text-decoration: none;
+    }
+
+    #yoyo3:hover {
+        text-decoration: none;
+        color: rgb(107, 211, 211);
+    }
+
+}

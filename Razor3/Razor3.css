@@ -1,0 +1,32 @@
+/* Wrapper for center alignment */
+.rzp-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* Razorpay Auto-Injected Button Styling */
+#rzp-button-container button {
+  background-color: #e50914 !important;   /* Netflix Red */
+  color: #fff !important;
+  border: none !important;
+  padding: 14px 32px !important;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+  cursor: pointer !important;
+  transition: 0.3s ease !important;
+  box-shadow: 0 4px 10px rgba(229, 9, 20, 0.35);
+}
+
+/* Hover Animation */
+#rzp-button-container button:hover {
+  background-color: #b20710 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(229, 9, 20, 0.45);
+}
+
+/* Button click effect */
+#rzp-button-container button:active {
+  transform: scale(0.97);
+}
