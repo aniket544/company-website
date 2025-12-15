@@ -3,6 +3,7 @@ import './Nav.css'
 import { Navigate, NavLink } from "react-router-dom";
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import logo from '../../assets/logo_ov2.0.png'
 
 function Nav() {
     let menu = useRef()
@@ -32,7 +33,7 @@ function Nav() {
 
     return (
         <nav>
-            <NavLink to='/'  className='ov' ><span>OVIN</span></NavLink>
+            <NavLink to='/'  className='ov' ><span><img src={logo} /></span></NavLink>
             <ul className='desktopmenu'>
                 <NavLink to="/" id="ddd" className={({ isActive }) => isActive ? "active" : ""} spy="true" smooth="true" duration={1000}>Home</NavLink>
                 <NavLink to="about" id="ddd" className={({ isActive }) => isActive ? "active" : ""} spy="true" smooth="true" duration={1000}> <li>About</li> </NavLink>
