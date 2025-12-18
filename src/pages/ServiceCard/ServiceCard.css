@@ -7,7 +7,7 @@
   align-items: center;
   flex-direction: column;
   padding: 60px 20px;
-  background-color: #000;
+background-color: var(--bg-color);
 }
 
 /* Card Grid */
@@ -21,7 +21,8 @@
 
 /* Single Card */
 .service-card {
-  background-color: #111;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color); /* Light mode mein shape dikhe */
   padding: 30px 20px;
   border-radius: 12px;
   width: 280px;
@@ -47,12 +48,14 @@
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: 600;
+  color: var(--text-color);
 }
+
 
 /* Description */
 .service-card p {
   font-size: 14px;
-  color: #ccc;
+  color: var(--text-secondary);
 }
 
 /* ✅ Responsive Styling for Both Card Layouts */

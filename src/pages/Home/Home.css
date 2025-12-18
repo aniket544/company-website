@@ -42,8 +42,7 @@
 }
 
 .lefthome {
-    color: white;
-}
+color: var(--text-color);}
 
 .righthome img {
     width: 70%;

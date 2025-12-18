@@ -4,8 +4,6 @@
     display: flex;
     position: relative;
     top: 70px;
-
-
 }
 
 .leftcontact {
@@ -14,7 +12,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .leftcontact img {
@@ -35,42 +32,57 @@
 form {
     height: 70%;
     width: 80%;
-    background-color: rgb(19, 25, 29);
-    box-shadow: 2px 2px 10px black, 2px 2px 20px black;
+
+    /* ✅ THEME UPDATES: Dynamic Background & Shadow */
+    background-color: var(--bg-secondary);
+    box-shadow: 2px 2px 10px var(--shadow-color), 2px 2px 20px var(--shadow-color);
+    border: 1px solid var(--border-color); /* Light mode me border dikhega */
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 20px;
     border-radius: 20px;
-
 }
 
 form:hover {
     box-shadow: 2px 2px 10px rgb(105, 208, 215), 2px 2px 20px rgb(105, 208, 215);
 }
 
-form input {
+/* ✅ UPDATED INPUTS & TEXTAREA */
+form input,
+#textaera {
     width: 80%;
-    height: 50px;
+    padding: 10px;
+
+    /* Theme Variables: Input box theme ke hisaab se change hoga */
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+    /* Border wahi Cyan rahegi branding ke liye */
     border: 2px solid rgb(105, 208, 215);
     border-radius: 20px;
-    padding: 10px;
-    background-color: rgb(105, 208, 215);
-    ;
-    color: black;
     font-size: 20px;
     outline: none;
 }
 
+/* Placeholder text ka color halka grey rakha hai */
+form input::placeholder,
+#textaera::placeholder {
+    color: var(--text-secondary);
+    opacity: 0.7;
+}
+
+/* Input Specific Height */
+form input {
+    height: 50px;
+}
+
+/* Textarea Specific Height */
 #textaera {
-    width: 80%;
     height: 200px;
-    border: 2px solid rgb(87, 196, 210);
-    border-radius: 20px;
-    padding: 20px;
-    outline: none;
-    font-size: 20px;
+    resize: vertical; /* User size change kar sake */
 }
 
 #btn {
@@ -83,14 +95,17 @@ form input {
     padding: 0;
     font-size: 20px;
     transition: all 0.3s;
+    border: none;
+    border-radius: 20px; /* Button ko bhi thoda round kar diya */
+    color: black; /* Text readable rahe */
 }
 
 #btn:hover {
     background: transparent;
     color: rgb(105, 208, 215);
     cursor: pointer;
+    border: 2px solid rgb(105, 208, 215); /* Hover par border dikhe */
 }
-
 
 @media (max-width: 750px) {
     #contact {
@@ -100,7 +115,6 @@ form input {
     .leftcontact,
     .rightcontact {
         width: 100%;
-
     }
 
     .leftcontact img {
@@ -117,5 +131,4 @@ form input {
     #textaera {
         width: 90%;
     }
-
 }

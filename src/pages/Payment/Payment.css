@@ -3,10 +3,10 @@
   align-items: center;
   justify-content: space-around;
   /* border: 2px solid white; */
-  background-color: #0A141D;
+background-color: var(--bg-color); /* Theme based background */
   position: relative;
   top: 120px;
-  height:500px;
+  height: 500px;
   margin-bottom: 140px;
 }
 
@@ -20,26 +20,23 @@
   justify-items: center;
   padding-top: 80px;
   bottom: 13px;
-  color: white;
+ color: var(--text-color);
+ background-color: var(--bg-secondary);
   height: 500px;
 
   width: 400px;
-  box-shadow:
-    0 20px 40px rgba(0, 0, 0, 0.1),
-    0 0 15px 3px rgba(66, 239, 230, 0.3);
+ box-shadow: 0 20px 40px var(--shadow-color), 0 0 15px 3px rgba(66, 239, 230, 0.3);
 }
 
 .payment-container {
   max-width: 480px;
   margin: 40px auto;
-  background: rgb(255, 255, 255);
+  background: var(--bg-secondary);
+  color: var(--text-color);
   border-radius: 10px;
   padding: 32px 20px;
-  box-shadow:
-    0 20px 40px rgba(0, 0, 0, 0.1),
-    0 0 15px 3px rgba(66, 239, 230, 0.3);
+  box-shadow: 0 20px 40px var(--shadow-color), 0 0 15px 3px rgba(66, 239, 230, 0.3);
   font-family: 'Segoe UI', Arial, sans-serif;
-  color: black;
   position: relative;
   top: 90px;
   right: 140px;

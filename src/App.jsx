@@ -16,7 +16,7 @@ import PricingSection from './components/PricingSection/PricingSection.jsx';
 import GeM from './components/Gem/GeM.jsx';
 import Plans from './components/Plans/Plans.jsx';
 
-import Bid from './pages/Bid/Bid.jsx';
+import Bid from './pages/Bid/Bid.jsx'; 
 import Login from './pages/Login/Login.jsx';
 import Signup from './pages/SignUp/Signup.jsx';
 import Profile from './components/Profile/Profile.jsx';

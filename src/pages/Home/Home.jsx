@@ -28,6 +28,10 @@ import FlowingMenu from '../../components/Marque/FlowingMenu'
 import PricingSection from '../../components/PricingSection/PricingSection'
 import Vision from "../../components/vision/Vision"
 
+// ✅ IMPORTS for UI Effects
+import { GridBackground } from "../../components/UI/GridBackground";
+import { ScrollReveal } from "../../components/UI/ScrollReveal";
+
 function Home() {
   useGSAP(() => {
     let tl1 = gsap.timeline()
@@ -128,150 +132,147 @@ function Home() {
   ];
 
 
-
-
   return (
     <>
-      <div id='home'>
-        <div className="lefthome">
-          <div className="homedetails">
-            <div className="line1">We're</div>
-            <div className="line2"> Ovin Enterprises</div>
-            <div className="line3">
-              <Typewriter
-                words={["GeM Consultant Services", "Tender Management Services", "Vendor Assessment", "Bidding Services"]}
-                typeSpeed={100}
-                deleteSpeed={50}
-                delaySpeed={1000}
-                loop={true}
-                cursorStyle=''
-              />
-
+      {/* Hero Section (No ScrollReveal needed here as it's visible on load) */}
+      <GridBackground>
+        <div id='home' className="w-full h-full flex justify-between items-center px-4 md:px-20 relative z-20" style={{ background: 'transparent' }}>
+          
+          <div className="lefthome">
+            <div className="homedetails">
+              <div className="line1">We're</div>
+              <div className="line2"> Ovin Enterprises</div>
+              <div className="line3">
+                <Typewriter
+                  words={["GeM Consultant Services", "Tender Management Services", "Vendor Assessment", "Bidding Services"]}
+                  typeSpeed={100}
+                  deleteSpeed={50}
+                  delaySpeed={1000}
+                  loop={true}
+                  cursorStyle=''
+                />
+              </div>
+              <button onClick={() => window.location.href = '/contact'}>Contact Us</button>
             </div>
-            <button onClick={() => window.location.href = '/contact'}>Contact Us</button>
+          </div>
+
+          <div className="righthome">
+            <img src={logo} alt="Ovin Logo" />
           </div>
 
         </div>
-        <div className="righthome">
-          <img src={logo} alt="" />
-        </div>
+      </GridBackground>
 
-
-      </div>
-      <PricingSection />
-      <div className="app-container">
-        <div className="card-wrapper">
-          {services.map((service, index) => (
-            <ServiceCard key={index} {...service} />
-          ))}
-        </div>
-      </div>
-
-      <div className="vision">
-        <Vision/>
-      </div>
-
-      <div className='gov'>Government Portal</div>
-      <FlowingMenu />
-      {/* <div className='c2'>
-
-        <div className='S2'>
-          <ServiceCard2 image={dip} />
-        </div>
-        <div className='S2'>
-          <ServiceCard2 image={cpp} />
-        </div>
-        <div className='S2' id='gem'>
-          <ServiceCard2 className="haha" image={gem} />
-        </div>
-        <div className='S2'>
-          <ServiceCard2 image={ire} />
-        </div>
-      </div> */}
-
-
-
-      <Gem />
-
-      <div id='about'>
-        <div className='left'>
-
-          <Card2 title="Python" image={wtd} className="yoyo" />
-          <Card2 title="mysql" image={wt3} className="kkkk" />
-
-        </div>
-
-        <div className="leftabout" id='mid'>
-          <div className="circle-line">
-            <div className="circle"></div>
-            <div className="line"></div>
-            <div className="circle"></div>
-            <div className="line"></div>
-            <div className="circle"></div>
-
-          </div>
-        </div>
-        <div className="rightabout">
-
-          <Card2 title="MySql" image={und} />
-
-        </div>
-
-        {/* <div className='right'>
-
-        </div> */}
-      </div>
-
-
-
-      <div className="app2-container2">
-        <h3 className="section-subtitle">Tender</h3>
-        <h1 className="section-title">Process for Tender Submission</h1>
-        <p className="section-desc">
-          Being eligible isn't enough to win a government contract! You need a strategic approach, an experienced team, and a solid execution plan to overcome the challenges in your way.
-        </p>
-
-        <div className="steps-grid">
-          {steps.map((step) => (
-            <StepCard key={step.id} {...step} />
-          ))}
-        </div>
-      </div>
-      <div className="clients">
-        <Project />
-      </div>
+      {/* ✅ Wrapped Sections with ScrollReveal */}
       
-      <div className="slider2">
-        <Swiper
-          modules={[Autoplay, Navigation, Pagination]}
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,   // 🔥 This is the magic line
-          }}
-          loop={true}
-          navigation
-          pagination={{ clickable: true }}
-          style={{ width: "896px", height: "504px" }}
-        >
-          {images.map((image, index) => (
-            <SwiperSlide key={index}>
-              <img
-                src={image.url}
-                alt={`slide-${index}`}
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+      <ScrollReveal>
+        <PricingSection />
+      </ScrollReveal>
+      
+      <ScrollReveal>
+        <div className="app-container">
+          <div className="card-wrapper">
+            {services.map((service, index) => (
+              <ServiceCard key={index} {...service} />
+            ))}
+          </div>
+        </div>
+      </ScrollReveal>
 
+      <ScrollReveal>
+        <div className="vision">
+          <Vision/>
+        </div>
+      </ScrollReveal>
+
+      <ScrollReveal>
+        <div className='gov'>Government Portal</div>
+      </ScrollReveal>
+      
+      <ScrollReveal>
+        <FlowingMenu />
+      </ScrollReveal>
+
+      <ScrollReveal>
+        <Gem />
+      </ScrollReveal>
+
+      <ScrollReveal>
+        <div id='about'>
+          <div className='left'>
+            <Card2 title="Python" image={wtd} className="yoyo" />
+            <Card2 title="mysql" image={wt3} className="kkkk" />
+          </div>
+
+          <div className="leftabout" id='mid'>
+            <div className="circle-line">
+              <div className="circle"></div>
+              <div className="line"></div>
+              <div className="circle"></div>
+              <div className="line"></div>
+              <div className="circle"></div>
+            </div>
+          </div>
+          
+          <div className="rightabout">
+            <Card2 title="MySql" image={und} />
+          </div>
+        </div>
+      </ScrollReveal>
+
+      <ScrollReveal>
+        <div className="app2-container2">
+          <h3 className="section-subtitle">Tender</h3>
+          <h1 className="section-title">Process for Tender Submission</h1>
+          <p className="section-desc">
+            Being eligible isn't enough to win a government contract! You need a strategic approach, an experienced team, and a solid execution plan to overcome the challenges in your way.
+          </p>
+
+          <div className="steps-grid">
+            {steps.map((step) => (
+              <StepCard key={step.id} {...step} />
+            ))}
+          </div>
+        </div>
+      </ScrollReveal>
+      
+      <ScrollReveal>
+        <div className="clients">
+          <Project />
+        </div>
+      </ScrollReveal>
+      
+      <ScrollReveal>
+        <div className="slider2">
+          <Swiper
+            modules={[Autoplay, Navigation, Pagination]}
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true, 
+            }}
+            loop={true}
+            navigation
+            pagination={{ clickable: true }}
+            style={{ width: "896px", height: "504px" }}
+          >
+            {images.map((image, index) => (
+              <SwiperSlide key={index}>
+                <img
+                  src={image.url}
+                  alt={`slide-${index}`}
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </ScrollReveal>
 
       <br />
       <br />
       <Footer />
     </>
-
   )
 }
 

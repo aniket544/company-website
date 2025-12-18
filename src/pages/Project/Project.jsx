@@ -15,7 +15,7 @@ function Project({title,image}) {
       y: 100,
       opacity: 0,
       duration: 1,
-      sragger:1,
+      stagger:1,
       scrollTrigger:{
         trigger: "#pera",
         scroll: "body",
@@ -30,7 +30,7 @@ function Project({title,image}) {
       y: 100,
       opacity: 0,
       duration: 1,
-      sragger:1,
+      stagger:1,
       scrollTrigger:{
         trigger: ".slider",
         scroll: "body",

@@ -1,6 +1,6 @@
 .footer {
-  background-color: #0c1117;
-  color: white;
+  background-color: var(--bg-secondary);
+  color: var(--text-color);
   padding: 40px 20px;
   font-family: Arial, sans-serif;
 }
@@ -17,12 +17,12 @@
 }
 
 .footer-column h3, .footer-column h2 {
-  color: white;
+  color: var(--text-color);
   margin-bottom: 10px;
 }
 
 .footer-column p, .footer-column li, .footer-column a {
-  color: #ccc;
+  color: var(--text-secondary); /* Thoda halka text */
   font-size: 14px;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .social-icons a {
-  color: white;
+ color: var(--text-color);
   font-size: 24px;
   margin-right: 15px;
   transition: color 0.3s ease;

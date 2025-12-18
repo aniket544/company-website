@@ -5,11 +5,18 @@ body {
 }
 
 .pricing-container {
-  color: white;
+  color: var(--text-color);       /* Theme ke hisaab se badlega */
+  background-color: var(--bg-color); 
   padding: 20px;
   max-width: 900px;
   margin: auto;
 }
+/* .pricing-container {
+  color: white;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+} */
 
 .green-text {
   color: #00ff88;
