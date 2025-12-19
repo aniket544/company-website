@@ -2,10 +2,10 @@ import React from 'react'
 import Card from '../../components/Card/Card'
 import './Project.css';
 import mini from '../../assets/mini.png';
-import newborn from '../../assets/NEWBORN.jpg';
-import vipin from '../../assets/VIPIN INDUSTRIES.jpg';
-import jawala from '../../assets/JAWALA.jpg';
-import chirag from '../../assets/CHIRAG.png';
+import brand from '../../assets/brand.png';
+import arc from '../../assets/Arc.png';
+import vishal from '../../assets/vishal.png';
+import pracxis from '../../assets/pracxis.png';
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 
@@ -49,11 +49,11 @@ function Project({title,image}) {
     <div id='projects'>
        <h1 id='pera'>Our Clients</h1>
         <div className="slider">
-            <Card title="Vipin Industries" image={vipin}/>
-            {/* <Card title="Silver Leaf Indus Pvt. Ltd." image={food}/> */}
-            <Card title="Jawala Safety Engineers Pvt. Ltd." image={jawala}/>
-            <Card title="Chirag Traders" image={chirag}/>
-            <Card title="NEWBORN" image={newborn}/>
+            <Card title="Arc Outdoor Media Ltd." image={arc}/>
+            <Card title="Vishal Craft and Interior Pvt. Ltd." image={vishal}/>
+            <Card title="Branding Area" image={brand}/>
+            <Card title="Pracxis Communication" image={pracxis}/>
+            {/* <Card title="NEWBORN" image={newborn}/> */}
             {/* <Card title="Aryak Engineers and Consultants" image={cal}/>
             <Card title="Ms. Anjali Enterprises" image={cal}/>
             <Card title="Biocab Marketing" image={cal}/>
