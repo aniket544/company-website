@@ -6,7 +6,7 @@ const PricingSection = () => {
   const navigate = useNavigate(); // ✅ Yeh yahan hona chahiye
 
   const handleNavigate = () => {
-    navigate("/Contact");
+    navigate("/Payment");
    
   };
 
